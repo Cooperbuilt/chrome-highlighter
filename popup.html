@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Highlighter Options</title>
+  <style>
+    body {
+      padding: 15px;
+      font-family: 'Courier New', Courier, monospace;
+      background: #f0f0f0;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #0057b7;
+    }
+    .color-picker-container {
+      background-color: #e0e0e0;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    #colorPicker {
+      border: 2px solid #0057b7;
+      border-radius: 4px;
+      height: 35px;
+      width: 100%;
+    }
+    .highlight-list {
+      background-color: #e0e0e0;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .highlight-entry {
+      cursor: pointer;
+      margin-bottom: 10px;
+      padding: 5px;
+      background: linear-gradient(45deg, #007bff, #00ff70);
+      color: white;
+      border-radius: 4px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+    .highlight-entry:hover {
+      background: linear-gradient(45deg, #0057b7, #00c957);
+    }
+    h3 {
+      text-align: center;
+      font-style: italic;
+      color: #0057b7;
+    }
+  </style>
+</head>
+<body>
+  <div class="color-picker-container">
+    <label for="colorPicker">Choose Highlight Color:</label>
+    <input type="color" id="colorPicker" value="#ffff00">
+  </div>
+  <div class="highlight-list" id="highlightList">
+    <h3>Saved Highlights</h3>
+    <!-- Highlight entries will be added here -->
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
